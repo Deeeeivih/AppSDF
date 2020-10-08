@@ -34,4 +34,9 @@ public class MainActivity extends AppCompatActivity {
             txtpass.setText("");
         }
     }
+
+    public void AcercaDe(View view) {
+        Intent i = new Intent(this, Developers.class);
+        startActivity(i);
+    }
 }
