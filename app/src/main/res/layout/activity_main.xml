@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:src="@drawable/fondo"
+        android:src="@drawable/news"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
