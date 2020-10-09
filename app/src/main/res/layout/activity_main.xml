@@ -38,6 +38,8 @@
         android:layout_margin="10dp"
         android:layout_above="@id/txtpass"
         android:textColorHint="#5E00BCD4"
+        android:drawableLeft="@drawable/ic_person"
+        android:textColor="#fff"
         />
     <EditText
         android:id="@+id/txtpass"
@@ -47,7 +49,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_above="@id/txtbt"
-        android:textColorHint="#6100BCD4"/>
+        android:textColorHint="#6100BCD4"
+        android:drawableLeft="@drawable/ic_pass_foreground"
+        android:textColor="#fff"/>
 
     <Button
         android:id="@+id/txtbt"

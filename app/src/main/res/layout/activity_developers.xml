@@ -5,10 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Developers">
+    tools:context=".Developers"
+    >
 
     <ImageView
-        android:src="@drawable/fondo"
+        android:src="@drawable/fondodevelopers"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
@@ -16,6 +17,7 @@
         />
 
     <de.hdodenhof.circleimageview.CircleImageView
+
         android:id="@+id/pipe"
         android:src="@drawable/pipe"
         android:layout_width="100dp"
@@ -45,15 +47,16 @@
         android:layout_height="wrap_content"
         android:text="Felipe Castro"
         android:textSize="20dp"
-        android:textColor="#000000"
+        android:textColor="#fff"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@id/pipe"/>
+        android:layout_toRightOf="@id/pipe"
+        android:fontFamily="@font/fredokaone_regular"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Analista Programador"
         android:textSize="15dp"
-        android:textColor="#000000"
+        android:textColor="#fff"
         android:layout_marginTop="45dp"
         android:layout_toRightOf="@id/pipe"/>
 
@@ -62,16 +65,17 @@
         android:layout_height="wrap_content"
         android:text="Simon Diaz"
         android:textSize="20dp"
-        android:textColor="#000000"
+        android:textColor="#fff"
         android:layout_marginTop="150dp"
-        android:layout_toRightOf="@id/pipe"/>
+        android:layout_toRightOf="@id/pipe"
+        android:fontFamily="@font/fredokaone_regular"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Analista Programador"
         android:textSize="15dp"
-        android:textColor="#000000"
+        android:textColor="#fff"
         android:layout_marginTop="175dp"
         android:layout_toRightOf="@id/pipe"/>
     <TextView
@@ -79,16 +83,17 @@
         android:layout_height="wrap_content"
         android:text="David Diaz"
         android:textSize="20dp"
-        android:textColor="#000000"
+        android:textColor="#fff"
         android:layout_marginTop="270dp"
-        android:layout_toRightOf="@id/pipe"/>
+        android:layout_toRightOf="@id/pipe"
+        android:fontFamily="@font/fredokaone_regular"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Analista Programador"
         android:textSize="15dp"
-        android:textColor="#000000"
+        android:textColor="#fff"
         android:layout_marginTop="295dp"
         android:layout_toRightOf="@id/pipe"/>
 
