@@ -24,6 +24,7 @@
         android:textSize="40dp"
         android:layout_margin="30dp"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/fredokaone_regular"
         />
 
     <EditText
@@ -33,7 +34,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_above="@id/txtpass" />
+        android:layout_above="@id/txtpass"
+        android:textColorHint="#5E00BCD4"
+        />
     <EditText
         android:id="@+id/txtpass"
         android:hint="Password"
@@ -41,7 +44,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_above="@id/txtbt" />
+        android:layout_above="@id/txtbt"
+        android:textColorHint="#6100BCD4"/>
 
     <Button
         android:id="@+id/txtbt"
@@ -63,7 +67,8 @@
         android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
         android:onClick="AcercaDe"
-        android:clickable="true"/>
+        android:clickable="true"
+        android:textColor="#F000BCD4"/>
 
 
 
