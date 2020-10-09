@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -55,7 +56,7 @@ public class AdapterNews extends RecyclerView.Adapter<AdapterNews.NewsHolder> {
     public class NewsHolder extends RecyclerView.ViewHolder {
         TextView item_name, item_author, item_title;
         ImageView item_img;
-        RelativeLayout item_card;
+        CardView item_card;
 
         String urlImage;
 
