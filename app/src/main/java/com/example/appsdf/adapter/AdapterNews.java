@@ -1,11 +1,11 @@
 package com.example.appsdf.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,6 +13,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.appsdf.DetailActivity;
 import com.example.appsdf.R;
 import com.example.appsdf.model.News;
 
@@ -67,6 +68,18 @@ public class AdapterNews extends RecyclerView.Adapter<AdapterNews.NewsHolder> {
             item_title = itemView.findViewById(R.id.item_title);
             item_card = itemView.findViewById(R.id.item_card);
             item_img = itemView.findViewById(R.id.item_img);
+            item_card.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(activity, DetailActivity.class);
+                    intent.putExtra("NAME",item_name.getText().toString());
+                    intent.putExtra("PICTURE", urlImage);
+                    intent.putExtra("AUTHOR",item_author.getText().toString());
+                    intent.putExtra("TITLE",item_title.getText().toString());
+                    activity.startActivity(intent);
+
+                }
+            });
         }
     }
 }
