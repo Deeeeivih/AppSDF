@@ -25,13 +25,14 @@ public class MainActivity extends AppCompatActivity {
         if (txtuser.getText().toString().isEmpty() || txtpass.getText().toString().isEmpty()) {
             Toast.makeText(this, "Complete Campos!", Toast.LENGTH_LONG).show();
 
-        } else {
+        } else if (txtuser.getText().toString().equals("admin") && txtpass.getText().toString().equals("123")){
             Intent i = new Intent(this, PrincipalActivity.class);
             startActivity(i);
             String user = txtuser.getText().toString();
-            Toast.makeText(this, "Hello " + user, Toast.LENGTH_SHORT).show();
             txtuser.setText("");
             txtpass.setText("");
+        }else{
+            Toast.makeText(this, "Usuario no valido!", Toast.LENGTH_LONG).show();
         }
     }
 

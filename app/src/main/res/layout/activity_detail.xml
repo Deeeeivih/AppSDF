@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondoprincipal"/>
 
     <ImageView
         android:id="@+id/detail_img"
@@ -18,10 +22,11 @@
 
     <TextView
         android:id="@+id/detail_name"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="News"
         android:layout_gravity="center"
+        android:background="#4B333030"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_alignParentRight="true"
@@ -29,9 +34,12 @@
 
     <TextView
         android:id="@+id/detail_title"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="La mejor noticia"
+        android:textColor="#ffffff"
+        android:background="#4B333030"
+        android:layout_margin="10dp"
         android:layout_gravity="center"
         android:layout_below="@id/detail_img"
         android:layout_centerHorizontal="true" />
@@ -42,6 +50,7 @@
         android:layout_height="wrap_content"
         android:text="Pedro Arancibia"
         android:layout_gravity="center"
+        android:layout_margin="4dp"
         android:layout_below="@id/detail_name"
         />
 
