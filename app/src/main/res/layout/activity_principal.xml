@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_card"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".PrincipalActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/fondo" />
+
+    <TextView
+        android:id="@+id/id_recientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="News Recientes"
+        android:textColor="#303F9F"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_recientes"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+</RelativeLayout>
