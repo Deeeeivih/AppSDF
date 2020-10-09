@@ -22,9 +22,12 @@
 
         <TextView
             android:id="@+id/item_name"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:textColor="#ffffff"
+            android:background="#BA454242"
+            android:gravity="center"
             android:text="News Now"
             android:textStyle="bold" />
 
@@ -32,8 +35,11 @@
             android:id="@+id/item_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/item_name"
+            android:layout_above="@id/item_title"
+            android:layout_alignParentRight="true"
+            android:background="#74FFEB3B"
             android:text="+Juan Perez"
+
             />
 
         <TextView
@@ -43,7 +49,10 @@
             android:text="Noticia CNN"
             android:background="#BA454242"
             android:layout_alignParentBottom="true"
-            android:textColor="#fff"
+            android:textSize="12dp"
+            android:textColor="#ffffff"
+            android:padding="6dp"
+
 
 
 
