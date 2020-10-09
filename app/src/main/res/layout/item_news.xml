@@ -38,10 +38,11 @@
         <TextView
             android:id="@+id/item_title"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:text="Noticia CNN"
-            android:background="#3C454242"
+            android:background="#BA454242"
             android:layout_alignParentBottom="true"
+            android:textColor="#fff"
 
 
 

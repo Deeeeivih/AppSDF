@@ -27,6 +27,8 @@
         android:fontFamily="@font/fredokaone_regular"
         />
 
+
+    
     <EditText
         android:id="@+id/txtuser"
         android:hint="Name User"
